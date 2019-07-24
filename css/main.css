@@ -100,7 +100,6 @@ li:hover ol {
   z-index: 10;
   list-style: none;
 }
-
 /* .nav-icon:hover {
 } */
 /* header */
@@ -167,6 +166,7 @@ h2 {
 }
 .skills-icon:hover {
   color: var(--mainYellow);
+  text-decoration: none;
 }
 .skills-underline {
   width: 4rem;
@@ -197,6 +197,26 @@ h2 {
 .product-value:hover {
   clip-path: polygon(0% 0, 85% 0, 85% 100%, 0 100%);
 }
+/* about section */
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 0.7s linear;
+}
+.about-img__container:hover::before {
+  top: 0;
+  left: 0;
+}
+
 /* question */
 .question {
   background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.6)),
@@ -279,11 +299,14 @@ h2 {
 .maps {
   margin: 0;
   padding: 0;
+  position: relative;
+  height: 100vh;
 }
 iframe {
+  position: absolute;
   width: 100%;
   border: none;
-  height: 100vh;
+  height: 100%;
 }
 .contact {
   min-height: 80vh;
