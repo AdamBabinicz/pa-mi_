@@ -4,7 +4,6 @@ window.addEventListener("load", () =>
 
 // script gallery
 
-// js
 $(".tile")
   .on("mouseover", function() {
     $(this)
