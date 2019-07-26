@@ -43,8 +43,11 @@
     <style>
       .height-max {
         min-height: calc(100vh - 76px);
-        background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.6)),
-        url("img/meb/DSC00220.JPG") center/cover fixed no-repeat;
+        background: linear-gradient(
+            rgba(16, 29, 44, 0.4),
+            rgba(16, 29, 44, 0.6)
+          ),
+          url("img/meb/DSC00220.JPG") center/cover fixed no-repeat;
         animation: zoom 20s 5s infinite;
       }
     </style>
@@ -141,19 +144,29 @@
           </a>
           <a
             href="https://g.page/PA-MI-BALUSTRADY-NIERDZEWNE/review"
-            class="nav-icon" target="_blank"
+            class="nav-icon"
+            target="_blank"
           >
             <i class="fab fa-google"></i>
           </a>
-          <a href="https://twitter.com/Magorza62185410" class="nav-icon" target="_blank">
+          <a
+            href="https://twitter.com/Magorza62185410"
+            class="nav-icon"
+            target="_blank"
+          >
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://pl.pinterest.com/slusarstwo0583" class="nav-icon" target="_blank">
+          <a
+            href="https://pl.pinterest.com/slusarstwo0583"
+            class="nav-icon"
+            target="_blank"
+          >
             <i class="fab fa-pinterest"></i>
           </a>
           <a
             href="https://www.youtube.com/channel/UCK00NmlI3_GuVRtw4Mk8gtA"
-            class="nav-icon" target="_blank"
+            class="nav-icon"
+            target="_blank"
           >
             <i class="fab fa-youtube"></i>
           </a>
@@ -192,7 +205,9 @@
       <div class="container">
         <!-- section title -->
         <div class="row mb-5">
-          <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+          <div
+            class="col d-flex flex-wrap text-uppercase justify-content-center"
+          >
             <h4 class="font-weight-bold align-self-center mx-1">
               napisz
             </h4>
@@ -211,7 +226,7 @@
             </h6>
             <div class="skills-underline"></div>
             <p class="w-75 mx-auto text-muted">
-              NIP: 7961045734<br>
+              NIP: 7961045734<br />
               REGON: 147074585
             </p>
           </div>
@@ -226,8 +241,8 @@
             </h6>
             <div class="skills-underline"></div>
             <p class="w-75 mx-auto text-muted">
-              26-600 Radom<br>
-              ul. Różana 23 F<br>
+              26-600 Radom<br />
+              ul. Różana 23 F<br />
               (Obozisko)
             </p>
           </div>
@@ -242,7 +257,7 @@
             </h6>
             <div class="skills-underline"></div>
             <p class="w-75 mx-auto text-muted">
-              8.00 - 15.00<br>
+              8.00 - 15.00<br />
               (w soboty nieczynne)
             </p>
           </div>
@@ -250,15 +265,17 @@
           <!-- single skill -->
           <div class="col-sm-6 col-lg-3 text-center my-3">
             <a href="tel:+48609731921" class="skills-icon p-2 rounded-circle">
-              <i class="fas fa-phone-alt"></i>&nbsp;<i class="far fa-envelope"></i>
+              <i class="fas fa-phone-alt"></i>&nbsp;<i
+                class="far fa-envelope"
+              ></i>
             </a>
             <h6 class="text-uppercase font-weight-bold my-3">
               telefon, email
             </h6>
             <div class="skills-underline"></div>
             <p class="w-75 mx-auto text-muted">
-              +48 609 731 921,<br>
-              +48 796 644 075<br>
+              +48 609 731 921,<br />
+              +48 796 644 075<br />
               pami@pa-mi.pl
             </p>
           </div>
@@ -321,19 +338,29 @@
         </a>
         <a
           href="https://g.page/PA-MI-BALUSTRADY-NIERDZEWNE/review"
-          class="footer-icon" target="_blank"
+          class="footer-icon"
+          target="_blank"
         >
           <i class="fab fa-google"></i>
         </a>
-        <a href="https://twitter.com/Magorza62185410" class="footer-icon" target="_blank">
+        <a
+          href="https://twitter.com/Magorza62185410"
+          class="footer-icon"
+          target="_blank"
+        >
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://pl.pinterest.com/slusarstwo0583" class="footer-icon" target="_blank">
+        <a
+          href="https://pl.pinterest.com/slusarstwo0583"
+          class="footer-icon"
+          target="_blank"
+        >
           <i class="fab fa-pinterest"></i>
         </a>
         <a
           href="https://www.youtube.com/channel/UCK00NmlI3_GuVRtw4Mk8gtA"
-          class="footer-icon" target="_blank"
+          class="footer-icon"
+          target="_blank"
         >
           <i class="fab fa-youtube"></i>
         </a>
@@ -341,6 +368,14 @@
       <p class="studio">studio&nbsp; pa - mi&nbsp; 2019</p>
     </footer>
     <!-- end of footer -->
+    <script>
+      document.body.innerHTML +=
+        '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;color:#000;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
+
+      function close() {
+        document.getElementById("cookiesAlert").style.color = "blue";
+      }
+    </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

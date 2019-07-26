@@ -287,6 +287,14 @@
       <p class="studio">studio&nbsp; pa - mi&nbsp; 2019</p>
     </footer>
     <!-- end of footer -->
+    <script>
+      document.body.innerHTML +=
+        '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;color:#000;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
+
+      function close() {
+        document.getElementById("cookiesAlert").style.color = "blue";
+      }
+    </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
