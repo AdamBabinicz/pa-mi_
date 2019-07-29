@@ -592,6 +592,7 @@ textarea::placeholder {
   transform: translate(-50%, -50%) scale(0.25);
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
+  padding-top: 2rem;
 }
 .popup_img {
   margin-bottom: 1rem !important;
@@ -656,6 +657,7 @@ textarea::placeholder {
 .popup__left p {
   color: #606060cc;
   font-size: 1.2rem;
+  margin-top: 3rem;
   margin-bottom: 0.3rem !important;
   line-height: 2rem;
 }
@@ -697,16 +699,16 @@ textarea::placeholder {
   color: #fff;
   display: inline-block;
   margin-top: 0.5rem;
-  padding: 1rem;
+  padding: 0 0.6rem 0 0.2rem;
 }
-@media only screen and (max-width: 56.25em) {
+/* @media only screen and (max-width: 56.25em) {
   .popup__text {
   }
 }
 @media only screen and (max-width: 37.5em) {
   .popup__text {
   }
-}
+} */
 .popup:target {
   opacity: 1;
   visibility: visible;
@@ -720,7 +722,7 @@ textarea::placeholder {
 .popup__close:visited {
   color: #555;
   position: absolute;
-  top: 1vw;
+  top: 1.5vw;
   right: 5vh;
   font-size: 3rem;
   text-decoration: none;
@@ -749,6 +751,9 @@ textarea::placeholder {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.66);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  width: max-content;
+  margin: auto;
+  padding: 0.7rem 2rem;
 }
 .btn--green:hover {
   color: var(--mainBlack);
@@ -776,10 +781,14 @@ textarea::placeholder {
     linear,
     left top,
     right top,
-    from(#ecdb8c),
-    to(#d3325f)
+    from(var(--mainYellow)),
+    to(var(--mainBlue))
   );
-  background-image: linear-gradient(to right, #ecdb8c, #d3325f);
+  background-image: linear-gradient(
+    to right,
+    var(--transparentBlue),
+    var(--mainBlack)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -797,6 +806,17 @@ textarea::placeholder {
 @media only screen and (max-width: 37.5em) {
   .heading-secondary {
     font-size: 1 rem;
+  }
+  .popup__close:link,
+  .popup__close:visited {
+    top: 3vw;
+  }
+  .secondary-h2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
   }
 }
 .heading-secondary:hover:not(.secondary) {
