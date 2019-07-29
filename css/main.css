@@ -294,7 +294,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
-.maps {
+.map {
   margin: 0;
   padding: 0;
   position: relative;
