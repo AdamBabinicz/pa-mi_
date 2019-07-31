@@ -88,8 +88,8 @@ li ol {
   visibility: hidden;
   transform: scaleY(0); /* zwijamy cały element */
   -webkit-transform: scaleY(0);
-  transform-origin: 0% 0%; /* ustawiamy punkt zwijania względem środka górnej krawędzi */
-  -webkit-transform-origin: 0% 0%;
+  transform-origin: 50% 0; /* ustawiamy punkt zwijania względem środka górnej krawędzi */
+  -webkit-transform-origin: 50% 0;
   transition: 0.3s all linear; /* wydłużamy wykonywanie stylów */
   /* display: none;
   -webkit-transition: all 0.3s ease;
@@ -229,7 +229,6 @@ h2 {
   top: 0;
   left: 0;
 }
-
 /* question */
 .question {
   background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.6)),
@@ -482,7 +481,6 @@ textarea::placeholder {
   padding: 0.1rem 0.4rem;
 }
 /* End Slider */
-
 @keyframes fot {
   0% {
     transform: rotateX(6deg) scale(1);
@@ -498,37 +496,30 @@ textarea::placeholder {
     transition: all 10s ease-in-out;
   }
 }
-
 @keyframes carousel {
   0% {
     left: 0;
-
     opacity: 0.79;
-
     transition: all 2s ease-in-out;
   }
   11% {
     left: 0;
     opacity: 0.89;
-
     transition: all 1s ease-out;
   }
   12.5% {
     left: -100%;
     opacity: 0.7;
-
     transition: all 2s ease-out;
   }
   23.5% {
     left: -100%;
     opacity: 0.85;
-
     transition: all 1s ease-out;
   }
   25% {
     left: -200%;
     opacity: 0.95;
-
     transition: all 2s ease-out;
   }
   36% {
@@ -630,7 +621,6 @@ textarea::placeholder {
 .popup_img {
   margin-bottom: 1rem !important;
 }
-
 @media only screen and (max-width: 56.25em) {
   .y {
     flex-direction: column;
@@ -872,5 +862,4 @@ textarea::placeholder {
   -webkit-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
 }
-
 /* end of popup */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zwijany div</title>
+  </head>
+  <body>
+    <a href="/" onClick="op('poka'); return false;">☎</a>
+    <div id="poka" style="display:none">
+      Ukryta treść DIV'a<br />
+      Małgorzata Michalska Schlosserhandwerk (PA-Mi Studio und Werkstatt) bietet
+      eine breite Palette von zeitgenössischen aus Metall entworfenen
+      Dekorationsprodukte, die mit Stolz in unserem Schlosserhandwerk
+      hergestellt werden. Jedes Produkt ist einzigartig. Um den Erwartungen des
+      individuellen Kunden entgegen zu kommen, bieten wir Folgendes an: moderne
+      Spiegel mit Metallrahmen, qualitativ hochwertige Metall-Bildschirme,
+      stilvolle Kleiderhaken, originelle Waschkörbe aus Stahl. Wir laden Sie
+      dazu ein, sich mit der wunderbaren Kombination zeitgenössischer Kunst mit
+      ihrer Funktionalität vertraut zu machen. Spiegel mit Metallrahmen – Rahmen
+      aus Chromstahl, aus Mattstahl, aus gebranntem und lackiertem Stahl, aus
+      Rohstahl und als Verbindung (Kombination) aus Glas, Stahl und Holz.
+      Spiegel mit Metallrahmen sind ein hervorragendes Kaufangebot sowohl für
+      ganze Familie als auch für die anspruchsvollsten Benutzer. Körbe für
+      Unterwäsche – sehr komfortabel entworfen, ideal geeignet für den
+      öffentlichen Gebrauch sowie zu Hause. Ideal für Büros, Schlafzimmer,
+      Bäder, Schließfächer, Studentenwohnheime und Wäscherei. Schönes Muster
+      macht aus diesen Produkten etwas mehr als nur Wäschekorbe. Kleiderhaken -
+      sind ein Beispiel für hochwertige Kunst und sie sind perfekt entworfen.
+      Sie sind so praktisch wie traditionelle Kleiderhaken, aber gleichzeitig
+      sind sie auch ein zeitgenössisches herrliches Dekorationsphänomen, das
+      besonders im Eingangsbereich effektiv wirkt. Wir bieten Ihnen eine
+      Vielzahl der Projekte zur Auswahl. Metall-Bildschirme – sind ein Beispiel
+      für die breite Palette unserer dekorativen Projekte im Haus. Sie können
+      als Trennwände, Dekorationen und Accessoires für die stilvolle
+      Innenarchitektur verwendet werden.
+    </div>
+    <script>
+      function op(obj) {
+        x = document.getElementById(obj);
+        if (x.style.display == "none") x.style.display = "block";
+        else x.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

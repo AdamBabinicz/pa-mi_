@@ -79,3 +79,11 @@ function showSlides(n) {
 }
 
 // end of script gallery
+
+// zwijany div
+function op(obj) {
+  x = document.getElementById(obj);
+  if (x.style.display == "none") x.style.display = "block";
+  else x.style.display = "none";
+}
+// end zwijany div
