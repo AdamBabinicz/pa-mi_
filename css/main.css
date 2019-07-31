@@ -232,6 +232,12 @@ h2 {
   top: 0;
   left: 0;
 }
+.flaga {
+  display: flex;
+}
+.tlo {
+  background: var(--mainGrey);
+}
 /* question */
 .question {
   background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.6)),
