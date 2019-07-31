@@ -52,6 +52,7 @@ body {
 }
 .menu {
   position: relative;
+  transition: all 0.9s ease-in-out;
 }
 .nav-link {
   color: var(--mainGrey);
@@ -83,20 +84,30 @@ ol li:hover {
   transition: all 0.3s ease;
 }
 li ol {
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  transform: scaleY(0); /* zwijamy cały element */
+  -webkit-transform: scaleY(0);
+  transform-origin: 0% 0%; /* ustawiamy punkt zwijania względem środka górnej krawędzi */
+  -webkit-transform-origin: 0% 0%;
+  transition: 0.3s all linear; /* wydłużamy wykonywanie stylów */
+  /* display: none;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
+  left: -69px;
+  right: -31px;
+  list-style: none;
 }
 li:hover ol {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: -69.5px;
-  right: -30.5px;
   top: 40px;
   bottom: 0;
   z-index: 10;
   list-style: none;
+  visibility: visible;
+  transform: scaleY(1); /* rozwijamy element do całej jego wysokości */
+  -webkit-transform: scaleY(1);
 }
 /* header */
 .header {
@@ -166,7 +177,6 @@ h2 {
   margin: 1rem auto;
 }
 /* inventory */
-
 .inventory {
   margin-top: 2rem;
   background: var(--mainGrey);
@@ -179,8 +189,13 @@ h2 {
   border-top-right-radius: 0;
   transition: all 0.3s ease-in-out;
 }
-.x {
-  overflow: hidden;
+.de {
+  font-size: 3rem;
+  color: var(--mainBlue);
+  transition: all 0.4s ease-in-out;
+}
+.de:hover {
+  color: var(--mainYellow);
 }
 .product-img:hover {
   transform: scale(1.2) rotate(8deg);
@@ -374,6 +389,7 @@ textarea::placeholder {
 .form-btn:hover {
   color: var(--mainGrey);
   background: var(--transparentBlue);
+  cursor: pointer;
 }
 /* footer icon */
 .footer {
@@ -614,6 +630,7 @@ textarea::placeholder {
 .popup_img {
   margin-bottom: 1rem !important;
 }
+
 @media only screen and (max-width: 56.25em) {
   .y {
     flex-direction: column;

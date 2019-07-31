@@ -2,6 +2,19 @@ window.addEventListener("load", () =>
   document.querySelector(".preloader").classList.add("hidePreloader")
 );
 
+//    magnific popup
+// $(document).ready(function() {
+//   $(".parent-container").magnificPopup({
+//     delegate: "a", // child items selector, by clicking on it popup will open
+//     type: "image",
+//     mainClass: "mfp-container",
+//     gallery: {
+//       enabled: true
+//     }
+//     // other options
+//   });
+// });
+
 // script gallery
 
 $(".tile")
