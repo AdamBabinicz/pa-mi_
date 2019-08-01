@@ -337,13 +337,16 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
-    <!-- <script>
+    <script>
       window.sr = ScrollReveal();
-      sr.reveal('.mr-2, h1, small, strong, .img-fluid', {
-        reset: true,
-        delay: 300
-      });
-    </script> -->
+      sr.reveal(
+        "img, .navbar-icon, a, h1, h2, h3, h5, h6, .tile, .prev, .next, .footer-icon",
+        {
+          reset: true,
+          delay: 300
+        }
+      );
+    </script>
     <script src="js/script.js"></script>
     <script type="application/ld+json">
       {

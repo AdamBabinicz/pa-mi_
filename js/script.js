@@ -87,3 +87,5 @@ function op(obj) {
   else x.style.display = "none";
 }
 // end zwijany div
+
+// scrolreveal

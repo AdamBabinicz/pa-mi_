@@ -216,6 +216,7 @@ h2 {
 /* about section */
 .about-img__container {
   position: relative;
+  z-index: 1;
 }
 .about-img__container::before {
   content: "";
