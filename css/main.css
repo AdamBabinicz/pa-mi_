@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Charm:400,700|Roboto:400,400i,700&display=swap&subset=latin-ext");
 
 :root {
   --mainBlue: #40ace1;
@@ -118,8 +118,9 @@ li:hover ol {
 .pa-mi {
   margin-top: 2rem;
   color: var(--mainYellow);
-  font-family: Lobster;
+  font-family: "Charm", cursive;
   text-align: center;
+  font-weight: 700;
 }
 .name {
   font-size: 2rem;
@@ -218,6 +219,11 @@ h2 {
   position: relative;
   z-index: 1;
 }
+.nth {
+  display: flex;
+  justify-content: space-around;
+}
+
 .about-img__container::before {
   content: "";
   position: absolute;
@@ -417,7 +423,7 @@ textarea::placeholder {
   color: var(--mainBlue);
 }
 .studio {
-  font-family: "Lobster";
+  font-family: "Charm", cursive;
   font-size: 1rem;
   color: var(--mainWhite);
   margin-top: 2rem;
