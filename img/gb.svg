@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" width="40" height="30">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-0.01 0L40.09 0L40.09 30.08L-0.01 30.08L-0.01 0Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #012169 } 
+		.shp1 { fill: #ffffff } 
+		.shp2 { fill: #c8102e } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="shp0" d="M-10.04 0L50.12 0L50.12 30.08L-10.04 30.08L-10.04 0Z" />
+				<path id="Layer" fill-rule="evenodd" class="shp1" d="M50.12 0L50.12 3.36L26.76 15.04L20.04 11.68L43.39 0L50.12 0ZM-3.31 30.08L-10.04 30.08L-10.04 26.72L13.32 15.04L20.04 18.4L-3.31 30.08ZM-10.04 0L-10.04 3.36L13.32 15.04L20.04 11.68L-3.31 0L-10.04 0ZM43.39 30.08L50.12 30.08L50.12 26.72L26.76 15.04L20.04 18.4L43.39 30.08Z" />
+				<path id="Layer" class="shp1" d="M15.03 0L15.03 30.08L25.05 30.08L25.05 0L15.03 0ZM-10.04 10.03L-10.04 20.05L50.12 20.05L50.12 10.03L-10.04 10.03Z" />
+				<path id="Layer" fill-rule="evenodd" class="shp2" d="M50.12 12.03L50.12 18.05L23.05 18.05L23.05 30.08L17.03 30.08L17.03 18.05L-10.04 18.05L-10.04 12.03L17.03 12.03L17.03 0L23.05 0L23.05 12.03L50.12 12.03ZM-10.04 30.08L10.01 20.05L14.5 20.05L-5.56 30.08L-10.04 30.08ZM-10.04 0L10.01 10.03L5.53 10.03L-10.04 2.24L-10.04 0ZM25.59 10.03L45.64 0L50.12 0L30.07 10.03L25.59 10.03ZM50.12 30.08L30.07 20.05L34.55 20.05L50.12 27.84L50.12 30.08Z" />
+			</g>
+		</g>
+	</g>
+</svg>

@@ -220,7 +220,6 @@ h2 {
   z-index: 1;
 }
 .nth {
-  display: flex;
   justify-content: space-around;
 }
 
@@ -241,6 +240,11 @@ h2 {
 }
 .flaga {
   display: flex;
+  align-items: center;
+}
+#poka-de,
+#poka-gb {
+  display: none;
 }
 .tlo {
   background: var(--mainGrey);
