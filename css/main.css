@@ -441,22 +441,24 @@ textarea::placeholder {
   width: 100%;
   height: 100vh;
   margin-bottom: 4rem;
+  padding: 2rem 0;
 }
 .tile {
   position: relative;
-  /* margin: 0 auto; */
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
   height: 100%;
   overflow: hidden;
 }
 .photo {
   position: absolute;
-  top: 0;
-  left: 0%;
+  /* top: 0; */
+  /* left: auto;
+  right: auto; */
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   transition: transform 0.8s ease-out;
 }
@@ -665,6 +667,9 @@ textarea::placeholder {
 @media only screen and (max-width: 37.5em) {
   [data-scale="2.4"] {
     z-index: -1;
+  }
+  .tlo {
+    background: transparent;
   }
   .y {
     flex-direction: column;
