@@ -438,10 +438,10 @@ textarea::placeholder {
   position: relative;
   top: 4rem;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   margin-bottom: 4rem;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 .tile {
   position: relative;
@@ -669,7 +669,10 @@ textarea::placeholder {
     z-index: -1;
   }
   .tile {
-    width: 95%;
+    width: 100%;
+  }
+  ol li:hover {
+    padding: 0 0.5rem;
   }
   .tlo {
     background: transparent;

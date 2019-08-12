@@ -43,7 +43,9 @@ $(".tile")
     $(this)
       .append('<div class="photo"></div>')
       .children(".photo")
-      .css({ "background-image": "url(" + $(this).attr("data-image") + ")" });
+      .css({
+        "background-image": "url(" + $(this).attr("data-image") + ")"
+      });
   });
 
 var slideIndex = 1;
