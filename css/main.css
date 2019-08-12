@@ -664,7 +664,6 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 37.5em) {
   [data-scale="2.4"] {
-    border: 2px solid black;
     z-index: -1;
   }
   .y {
