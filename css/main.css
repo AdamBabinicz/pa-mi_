@@ -668,6 +668,9 @@ textarea::placeholder {
   [data-scale="2.4"] {
     z-index: -1;
   }
+  .tile {
+    width: 95%;
+  }
   .tlo {
     background: transparent;
   }
