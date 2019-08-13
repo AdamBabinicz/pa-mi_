@@ -247,7 +247,7 @@ h2 {
   display: none;
 } */
 .tlo {
-  background: var(--mainGrey);
+  background: linear-gradient(rgba(16, 29, 44, 0.1), rgba(16, 29, 44, 0.8));
 }
 /* question */
 .question {
@@ -644,6 +644,9 @@ textarea::placeholder {
   margin-bottom: 1rem !important;
 }
 @media only screen and (max-width: 56.25em) {
+  .port {
+    display: none;
+  }
   .y {
     flex-direction: column;
   }
