@@ -247,7 +247,7 @@ h2 {
   display: none;
 } */
 .tlo {
-  background: linear-gradient(rgba(16, 29, 44, 0.1), rgba(16, 29, 44, 0.8));
+  background: var(--mainGrey);
 }
 /* question */
 .question {
