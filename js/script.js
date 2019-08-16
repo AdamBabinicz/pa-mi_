@@ -38,15 +38,33 @@ $(".tile")
           ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
           "%"
       });
-  })
-  .each(function() {
-    $(this)
-      .append('<div class="photo"></div>')
-      .children(".photo")
-      .css({
-        "background-image": "url(" + $(this).attr("data-image") + ")"
-      });
   });
+
+$(window).on("orientationchange resize load", function(event) {
+  if ($(window).width() > $(window).height()) {
+    $(".tile").each(function() {
+      $(this)
+        .append('<div class="photo"></div>')
+        .children(".photo")
+        .css({
+          "background-image":
+            "url(" + $(this).attr("data-image-landscape") + ")"
+        });
+      // .remove("tile");
+    });
+  }
+  if ($(window).width() < $(window).height()) {
+    $(".tile").each(function() {
+      $(this)
+        .append('<div class="photo"></div>')
+        .children(".photo")
+        .css({
+          "background-image": "url(" + $(this).attr("data-image-portrait") + ")"
+        });
+      // .remove("tile");
+    });
+  }
+});
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -91,3 +109,18 @@ function op(obj) {
 // end zwijany div
 
 // scrolreveal
+
+// Listen for orientation changes
+
+// $(window).on("orientationchange", function(event) {
+//   $("body")
+//     .removeData("data-image-portrait")
+//     .removeData("data-image-landscape")
+//     .addClass(event.orientation);
+// });
+
+// $(document).ready(function(e) {
+//   if ($(window).width() > $(window).height())
+//     $("body").addData("data-image-landscape");
+//   else $("body").addData("data-image-portrait");
+// });
