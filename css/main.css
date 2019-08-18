@@ -699,9 +699,6 @@ textarea::placeholder {
   .popup__text {
     font-size: 1.4rem !important;
   }
-  .btn--green {
-    background: red !important;
-  }
 }
 .popup__left {
   width: 100% !important;
