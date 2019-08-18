@@ -691,7 +691,7 @@ textarea::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    justify-content: center;
+    margin-bottom: 2rem;
     background: pink;
   }
   .popup__left {
