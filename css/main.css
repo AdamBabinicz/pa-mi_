@@ -691,8 +691,6 @@ textarea::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 2rem;
-    background: pink;
   }
   .popup__left {
     padding: 1rem !important;
@@ -700,6 +698,9 @@ textarea::placeholder {
   }
   .popup__text {
     font-size: 1.4rem !important;
+  }
+  .btn--green {
+    margin-bottom: 2rem;
   }
 }
 .popup__left {
