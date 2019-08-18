@@ -866,7 +866,7 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 37.5em) {
   .heading-secondary {
-    font-size: 1 rem;
+    display: none;
   }
   .popup__close:link,
   .popup__close:visited {
