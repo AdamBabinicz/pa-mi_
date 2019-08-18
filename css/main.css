@@ -691,6 +691,7 @@ textarea::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-items: center;
   }
   .popup__left {
     padding: 1rem !important;
