@@ -701,6 +701,7 @@ textarea::placeholder {
   }
   .btn--green {
     margin-bottom: 2rem;
+    background: red !important;
   }
 }
 .popup__left {
