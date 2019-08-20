@@ -783,7 +783,7 @@ textarea::placeholder {
 .popup__close:visited {
   color: #555;
   position: absolute;
-  top: 1.5vw;
+  top: 2vw;
   right: 5vh;
   font-size: 3rem;
   text-decoration: none;
@@ -870,7 +870,7 @@ textarea::placeholder {
   }
   .popup__close:link,
   .popup__close:visited {
-    top: 3vw;
+    top: 4vw;
   }
   .secondary-h2 {
     position: absolute;
