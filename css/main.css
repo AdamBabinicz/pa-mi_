@@ -193,6 +193,10 @@ h2 {
 .x {
   overflow: hidden;
 }
+.just {
+  text-align: justify;
+  padding-right: 3rem;
+}
 .de {
   font-size: 3rem;
   color: var(--mainBlue);
@@ -643,12 +647,18 @@ textarea::placeholder {
 .popup_img {
   margin-bottom: 1rem !important;
 }
+.popup__text {
+  text-align: justify;
+}
 @media only screen and (max-width: 56.25em) {
   .port {
     display: none;
   }
   .y {
     flex-direction: column;
+  }
+  .just {
+    padding-right: initial;
   }
   .popup__content {
     display: -webkit-box;
@@ -665,6 +675,7 @@ textarea::placeholder {
   }
   .popup__text {
     font-size: 1.5rem !important;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -682,6 +693,9 @@ textarea::placeholder {
   }
   .y {
     flex-direction: column;
+  }
+  .just {
+    padding-right: initial;
   }
   .popup__content {
     display: -webkit-box;
