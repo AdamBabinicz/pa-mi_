@@ -382,7 +382,8 @@ form {
   flex: 0 0 60%;
   flex-direction: column;
 }
-form input {
+form input,
+form textarea {
   margin: 10px 0;
 }
 form h3 {

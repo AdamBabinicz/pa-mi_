@@ -108,19 +108,28 @@ function op(obj) {
 }
 // end zwijany div
 
-// scrolreveal
+// $(function($) {
+//   $("form").submit(function(event) {
+//     event.preventDefault();
 
-// Listen for orientation changes
-
-// $(window).on("orientationchange", function(event) {
-//   $("body")
-//     .removeData("data-image-portrait")
-//     .removeData("data-image-landscape")
-//     .addClass(event.orientation);
-// });
-
-// $(document).ready(function(e) {
-//   if ($(window).width() > $(window).height())
-//     $("body").addData("data-image-landscape");
-//   else $("body").addData("data-image-portrait");
+//     $.ajax({
+//       url: "https://formspree.io/pami@pa-mi.pl",
+//       method: "POST",
+//       data: {
+//         name: $("#name").val(),
+//         email: $("#email").val(),
+//         message: $("#text").val()
+//       },
+//       dataType: "json"
+//     })
+//       .done(function() {
+//         $("#name").val("");
+//         $("#email").val("");
+//         $("#text").val("");
+//         alert("Email enviado com sucesso!");
+//       })
+//       .fail(function() {
+//         alert("Erro ao enviar email!");
+//       });
+//   });
 // });

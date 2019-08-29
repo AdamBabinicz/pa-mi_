@@ -312,24 +312,18 @@
       </section>
       <section class="contact">
         <article class="contact-card">
-          <form
-            action="mailto:puaro@vp.pl?subject=PA-MI"
-            method="post"
-            enctype="text/plain"
-            onsubmit="mail_form(this); return false"
-            class="form"
-          >
+          <form method="POST" action="https://formspree.io/pami@pa-mi.pl" target="_blank">
             <h3>Kontakt z nami</h3>
             <input
               type="text"
-              id="name"
+              name="Imię i nazwisko lub nick"
               placeholder="imię i nazwisko lub nick"
               required
+              autofocus="true"
             />
-            <input type="email" id="email" placeholder="email" required />
+            <input type="email" name="e-mail" placeholder="email" required />
             <textarea
-              name="comment"
-              id="text"
+              name="Wiadomość"
               cols="30"
               rows="10"
               placeholder="proszę wpisać wiadomość ..."
