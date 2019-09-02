@@ -59,7 +59,9 @@ $(window).on("orientationchange resize load", function(event) {
         .append('<div class="photo"></div>')
         .children(".photo")
         .css({
-          "background-image": "url(" + $(this).attr("data-image-portrait") + ")"
+          "background-image":
+            "url(" + $(this).attr("data-image-portrait") + ")",
+          "background-size": "contain"
         });
       // .remove("tile");
     });
