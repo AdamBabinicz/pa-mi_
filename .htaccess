@@ -1,13 +1,35 @@
-RewriteEngine On 
-RewriteCond %{HTTPS} !=on 
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
+# RewriteEngine On 
+# RewriteCond %{HTTPS} !=on 
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # przekierowanie dla przykładu www -> bez www
-# RewriteEngine on
-# RewriteCond %{HTTP_HOST} !^www.pa-mi.pl$ [NC]
-# RewriteRule ^(.*)$ http://www.pa-mi.pl/$1 [L,301]
-# RewriteRule ^index.(php|html|htm)$/ [R=301,L]
+RewriteEngine on
+                
+RewriteCond %{HTTP_HOST} !^www.pa-mi.pl$ [NC]
+RewriteRule ^(.*)$ http://www.pa-mi.pl/$1 [L,R=301]
+RewriteRule ^index.php$ https://www.pa-mi.pl [R=301,L]
+RewriteRule ^index.html$ http://www.pa-mi.pl [R=301,L]
+RewriteRule ^index.(php|html|htm)$/ [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
+
+RewriteEngine On
+RewriteRule ^([a-z0-9-_]+)$ http://%{HTTP_HOST}/$1/ [R=301]
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} [^\./\\] [NC]
+RewriteCond %{REQUEST_URI}.htm -f [NC]
+RewriteRule ^(.+)$ $1.htm [L] 
+
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch> 
 
 RewriteEngine On
 RewriteRule slusarstwo-artystyczne-pami-malgorzata-michalska index.html
