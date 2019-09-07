@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:  
-Sitemap: https://pa-mi.pl/sitemap.xml
+Sitemap: https://www.pa-mi.pl/sitemap.xml
