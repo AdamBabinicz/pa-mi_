@@ -8,7 +8,6 @@ RewriteRule ^index.html$ http://www.pa-mi.pl [R=301,L]
 RewriteRule ^index.(php|html|htm)$/ [R=301,L]
 
 RewriteEngine On
-RewriteRule slusarstwo-artystyczne-pami-malgorzata-michalska index.html
 RewriteRule firma-z-tradycjami-w-slusarstwie-artystycznym firma.html
 RewriteRule balustrady-ramy-luster-akcesoria-meble-krzyze-renowacja realizacje.html
 RewriteRule zamow-meble-z-mosiadzu kontakt.html
