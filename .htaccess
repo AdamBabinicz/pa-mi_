@@ -8,6 +8,18 @@ RewriteRule ^index.html$ http://www.pa-mi.pl [R=301,L]
 RewriteRule ^index.(php|html|htm)$/ [R=301,L]
 
 RewriteEngine On
+RewriteRule slusarstwo-artystyczne-pami-malgorzata-michalska index.html
+RewriteRule firma-z-tradycjami-w-slusarstwie-artystycznym firma.html
+RewriteRule balustrady-ramy-luster-akcesoria-meble-krzyze-renowacja realizacje.html
+RewriteRule zamow-meble-z-mosiadzu kontakt.html
+RewriteRule balustrady-ze-stali-nierdzewnej balustrady.html
+RewriteRule ramy-luster ramy.html
+RewriteRule akcesoria-z-mosiadzu akcesoria.html
+RewriteRule meble-do-domu-i-ogrodu meble.html
+RewriteRule krzyze-katolickie krzyze.html
+RewriteRule renowacja-starych-mebli-drewnianych renowacja.html
+
+RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -26,18 +38,6 @@ RewriteRule ^(.+)$ $1.htm [L]
 Order Allow,Deny
 Deny from all
 </FilesMatch> 
-
-RewriteEngine On
-RewriteRule slusarstwo-artystyczne-pami-malgorzata-michalska index.html
-RewriteRule firma-z-tradycjami-w-slusarstwie-artystycznym firma.html
-RewriteRule balustrady-ramy-luster-akcesoria-meble-krzyze-renowacja realizacje.html
-RewriteRule zapraszamy-609731921-796644075-radom kontakt.html
-RewriteRule balustrady-ze-stali-nierdzewnej balustrady.html
-RewriteRule ramy-luster ramy.html
-RewriteRule akcesoria-z-mosiadzu akcesoria.html
-RewriteRule meble-do-domu-i-ogrodu meble.html
-RewriteRule krzyze-katolickie krzyze.html
-RewriteRule renowacja-starych-mebli-drewnianych renowacja.html
 
 # BEGIN Expire headers  
 <ifModule mod_expires.c>  

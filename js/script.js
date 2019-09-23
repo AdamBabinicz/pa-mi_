@@ -47,10 +47,9 @@ $(window).on("orientationchange resize load", function(event) {
         .append('<div class="photo"></div>')
         .children(".photo")
         .css({
-          "background-image":
-            "url(" + $(this).attr("data-image-landscape") + ")"
-        });
-      // .remove("tile");
+          "background-image": "url(" + $(this).attr("data-image") + ")"
+        })
+        .remove("tile");
     });
   }
   if ($(window).width() < $(window).height()) {
@@ -59,9 +58,7 @@ $(window).on("orientationchange resize load", function(event) {
         .append('<div class="photo"></div>')
         .children(".photo")
         .css({
-          "background-image":
-            "url(" + $(this).attr("data-image-portrait") + ")",
-          "background-size": "contain"
+          "background-image": "url(" + $(this).attr("data-image") + ")"
         });
       // .remove("tile");
     });

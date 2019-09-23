@@ -7,6 +7,7 @@
   --mainBlack: #292f36;
   --mainGrey: rgb(216, 214, 214);
   --mainYellow: #e3b505;
+  --mainDarkYellow: #caa305b9;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -60,6 +61,9 @@ body {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+.red {
+  color: red;
+}
 .nav-link:hover {
   color: var(--mainYellow);
 }
@@ -90,10 +94,11 @@ li ol {
   -webkit-transform: scaleY(0);
   transform-origin: 50% 0; /* ustawiamy punkt zwijania względem środka górnej krawędzi */
   -webkit-transform-origin: 50% 0;
-  transition: 0.3s all linear; /* wydłużamy wykonywanie stylów */
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear; /* wydłużamy wykonywanie stylów */
   /* display: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; */
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; */
   left: -69px;
   right: -31px;
   list-style: none;
@@ -125,8 +130,13 @@ li:hover ol {
 .name {
   font-size: 2rem;
 }
-h2 {
+h2 a {
   color: var(--mainYellow);
+  transition: all 0.3s ease;
+}
+h2 a:hover {
+  color: var(--mainDarkYellow);
+  text-decoration: none;
 }
 @keyframes zoom {
   0% {
@@ -142,6 +152,30 @@ h2 {
 .title-heading {
   background: rgba(0, 0, 0, 0.4);
   border-left: 0.3rem solid var(--mainBlue);
+}
+.title-heading a {
+  color: var(--mainWhite);
+  transition: all 0.3s ease;
+}
+.title-heading a:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+h3 a {
+  color: var(--mainWhite);
+  transition: all 0.3s ease;
+}
+h3 a:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+h6 a {
+  color: var(--mainWhite);
+  transition: all 0.3s ease;
+}
+h6 a:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
 }
 .title {
   font-weight: 700;
@@ -226,7 +260,6 @@ h2 {
 .nth {
   justify-content: space-around;
 }
-
 .about-img__container::before {
   content: "";
   position: absolute;
@@ -464,7 +497,7 @@ textarea::placeholder {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   transition: transform 0.8s ease-out;
 }
 /* Start Slider */
@@ -683,11 +716,21 @@ textarea::placeholder {
   [data-scale="2.4"] {
     z-index: -1;
   }
+  .tiles {
+    height: 60vh;
+  }
   .tile {
+    width: 100%;
+    background: var(--mainGrey);
+  }
+  ol li {
+    background: rgb(49, 49, 61);
+    height: 100vh;
     width: 100%;
   }
   ol li:hover {
     padding: 0 0.5rem;
+    background: rgb(44, 44, 53);
   }
   .tlo {
     background: transparent;
@@ -777,14 +820,6 @@ textarea::placeholder {
   margin-top: 0.5rem;
   padding: 0 0.6rem 0 0.2rem;
 }
-/* @media only screen and (max-width: 56.25em) {
-  .popup__text {
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .popup__text {
-  }
-} */
 .popup:target {
   opacity: 1;
   visibility: visible;
