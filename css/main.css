@@ -380,16 +380,15 @@ sup {
 /* contact */
 .outline {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 .map {
   margin: 0;
   padding: 0;
-  position: relative;
   height: 100vh;
 }
 iframe {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   border: none;
   height: 100%;
@@ -397,7 +396,7 @@ iframe {
 .contact {
   min-height: 80vh;
   background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.6)),
-    url("../img/meb/land/DSC00188.JPG") center/cover fixed no-repeat;
+    url("../img/meb/land/DSC00188.JPG") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,7 +404,7 @@ iframe {
 .contact-card {
   display: flex;
   flex: 0 0 80%;
-  padding: 40px 0;
+  padding: 40px 1rem;
   background: rgba(0, 0, 0, 0.4);
   justify-content: center;
   align-items: center;
